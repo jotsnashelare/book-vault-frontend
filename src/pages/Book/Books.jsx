@@ -96,7 +96,7 @@ const AdminBooks = () => {
                 {isAdmin && (
                   <>
                     <th>ISBN</th><th>Category</th><th>Genre</th>
-                    <th>Tags</th>
+                    
                   </>
                 )}
                 <th>Quantity</th><th>Language</th>
@@ -128,7 +128,6 @@ const AdminBooks = () => {
                       <td>{book.isbn}</td>
                       <td>{book.category}</td>
                       <td>{book.genre}</td>
-                      <td>{book.tags ? book.tags.join(', ') : 'N/A'}</td>
                     </>
                   )}
                   <td>{book.quantity}</td>

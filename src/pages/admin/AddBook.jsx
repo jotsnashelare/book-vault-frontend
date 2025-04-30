@@ -6,7 +6,7 @@ import './AddBook.css';
 const AddBook = () => {
   const [bookData, setBookData] = useState({
     title: '', author: '', category: '', quantity: 1,
-    tags: '', language: '', genre: '',
+     language: '', genre: '',
     isbn: '', publisher: '', publishedYear: new Date().getFullYear()
   });
   const [file, setFile] = useState(null);
@@ -82,7 +82,7 @@ const AddBook = () => {
       {success && <div className="success">{success}</div>}
 
       <form onSubmit={handleSubmit} className="add-book-form">
-        {['title','author','category','quantity','tags','language','genre','isbn','publisher','publishedYear']
+        {['title','author','category','quantity','language','genre','isbn','publisher','publishedYear']
           .map(name => (
             <input
               key={name}

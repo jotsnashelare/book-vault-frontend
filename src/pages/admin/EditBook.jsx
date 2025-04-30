@@ -13,7 +13,6 @@ const EditBook = () => {
     author: '',
     category: '',  // updated key
     quantity: 1,
-    tags: '',
     language: '',
     genre: '',
     isbn: '',
@@ -34,7 +33,6 @@ const EditBook = () => {
           author: book.author,
           category: book.category,
           quantity: book.quantity,
-          tags: (book.tags || []).join(', '),
           language: book.language || '',
           genre: book.genre || '',
           isbn: book.isbn || '',
